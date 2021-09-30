@@ -20,7 +20,7 @@ namespace pl.polidea.lab.Web_Page_Screensaver
         private void PreferencesForm_Load(object sender, EventArgs e)
         {
             RegistryKey reg = Registry.CurrentUser.CreateSubKey(Program.KEY);
-            textBox1.Text = (string)reg.GetValue("Url", "http://www.polidea.pl");
+            textBox1.Text = (string)reg.GetValue("Url", "http://smghome/scr");
             reg.Close();
         }
 
